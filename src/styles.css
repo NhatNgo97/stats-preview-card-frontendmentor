@@ -1,0 +1,90 @@
+
+body{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  min-height:100vh;
+  background-color: hsl(233, 47%, 7%);
+}
+
+.container {
+  display:flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: row-reverse;
+
+}
+
+
+.text-container{
+  background-color: hsl(244, 38%, 16%);
+  padding: 3rem;
+  color: white;
+  max-width: 28rem;
+  font-family: "Inter";
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+
+}
+
+.achievement-container{
+  display:flex;
+  margin-top: 3rem;
+
+}
+
+.achievement{
+  margin: auto 3rem 1rem 0rem;
+
+}
+
+img{
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+span{
+
+  color : hsl(277, 64%, 61%);
+}
+
+.disc{
+  color : hsla(0, 0%, 100%, 0.75);
+}
+
+.stat-head{
+  color : hsla(0, 0%, 100%, 0.6);
+}
+
+@media screen and (max-width: 960px){
+  .container{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .achievement-container{
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+
+  }
+
+  .achievement{
+    margin:auto;
+
+  }
+
+  .text-container{
+    padding:auto;
+    border-bottom-left-radius: 0.5rem;
+    border-top-right-radius: 0rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+  img{
+    border-bottom-right-radius: 0rem;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+  }
+
+
+}
